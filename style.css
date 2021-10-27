@@ -1,0 +1,249 @@
+body{
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #C4E4E7;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #3B5E60;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#block{
+    width: 100%;
+    max-width: 600px;
+    /* height: 300px; */
+    display: flex;
+    background-color: white;
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    padding: 15px 0;
+}
+
+#resultado{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #00474B;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    /* border: 1px solid gray; */
+    color: #F5FFFF;
+    padding: 20px 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.porPessoa{
+    color: #659395;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+p{
+    margin: 0;
+}
+
+#bt-reset{
+    align-self: center;
+    background-color: #26C2AD;
+    border: none;
+    padding: 0.6rem 4rem;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #00474B;
+    font-weight: 700;
+}
+
+#bt-reset:hover{
+    background-color: #9FE8DF;
+}
+
+.valorShow{
+    color: #2DC0AB;
+    font-size: 28px;
+    font-weight: 700;
+    transform: translateY(-5px);
+}
+
+#calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    flex-grow: 1;
+    max-width: 45%;
+    margin: 20px;
+    color: #4b5b5c;
+    font-size: 12px;
+}
+
+input{
+    border: none;
+    background-color: #F3F8FB;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: right;
+    color: #00474B;
+    font-weight: 700;
+}
+
+input:focus{
+    outline-color: #8BDAD0;
+}
+
+#valor{
+    background-image: url('images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+}
+
+#qtyPessoas{
+    background-image: url('images/icon-person.svg');
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid yellow; */
+}
+
+.bt-gorjeta, #gorjetaUser{
+    width: 30%;
+    margin: 10px 0;
+}
+
+.bt-gorjeta{
+    padding: 0.5rem 0;
+    background-color: #00474B;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.bt-gorjeta:hover{
+    background-color: #9FE8DF;
+    color: #00474B;
+}
+
+#gorjetaUser{
+    width: 18%;
+}
+
+button, input{
+    font-family: 'Space Mono', monospace;
+}
+
+button{
+    cursor: pointer;
+}
+
+.active{
+    background-color: #9FE8DF;
+    color: #00474B;
+}
+
+.desactive{
+    background-color: #0D686D;
+}
+
+.erro{
+    border: #DE8C78;
+    outline-color: #DE8C78;
+    color: #DE8C78;
+}
+
+.erro:focus{
+    border: #DE8C78;
+    outline-color: #DE8C78;
+    color: #DE8C78;
+}
+
+
+@media (max-width: 560px){
+    
+    #block{
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+
+    #calculator{
+        /* border: 1px solid black; */
+        max-width: 100%;
+        margin: 20px 35px;
+        
+    }
+
+    #resultado{
+        /* border: 1px solid yellow; */
+        margin: 20px 35px;
+    }
+
+    .bt-gorjeta{
+        width: 130px;
+        margin: 10px 5px;
+    }
+
+    #gorjetaUser{
+        width: 108px;
+        max-width: 30%;
+    }
+
+    .flexbox{
+        padding: 20px 30px;
+    }
+
+}
+
+@media (max-width: 350px){
+
+    .bt-gorjeta{
+        width: 100px;
+        margin: 10px 5px;
+    }
+
+    #gorjetaUser{
+        width: 80px;
+        max-width: 30%;
+    }
+
+    .flexbox{
+        padding: 20px 15px;
+    }
+
+    #calculator{
+        /* border: 1px solid black; */
+        max-width: 100%;
+        margin: 20px 15px;
+        
+    }
+
+    #resultado{
+        /* border: 1px solid yellow; */
+        margin: 20px 15px;
+    }
+
+}
