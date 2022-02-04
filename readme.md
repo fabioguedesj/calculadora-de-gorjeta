@@ -1,8 +1,6 @@
 # Sobre
 
-Primeiro desafio realizado para o site Frontend Mentor
-
-A ideia era fazer uma calculadora que calcula o valor da gorjeta em tempo real (sem precisar pressionar qualquer botão)
+Calculadora que exibe o valor da gorjeta em tempo real
 
 ## Linguagens
 
